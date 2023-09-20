@@ -1,3 +1,19 @@
+import os
+
+base_directory = "C:/Users/N30691/OneDrive - NGC/Desktop"
+prefix = "2333"
+
+def find_folder():
+    files = os.listdir(base_directory)
+    for file in files:
+        if file.startswith(prefix):
+            return file
+
+if __name__ == '__main__':
+    print(f'{base_directory}/{find_folder()}')
+
+----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----*----*-----
+
 https://stackoverflow.com/questions/16790328/open-multiple-filenames-in-tkinter-and-add-the-filesnames-to-a-list
 1234-12CV.pdf
 First 4 # is name of folder inside Job Job_Projects
